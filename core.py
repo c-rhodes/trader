@@ -140,7 +140,7 @@ def parse_args():
                         help='run the commandline version of sumo')
     parser.add_argument('--rundir', metavar='DIR',
                         help='dir to store simulation output')
-    parser.add_argument('-n', type=int,
+    parser.add_argument('-n', type=int, default=3600,
                         help='number of vehicles in simulation')
     args = parser.parse_args()
     return args
